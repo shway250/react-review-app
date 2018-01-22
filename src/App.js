@@ -18,10 +18,12 @@ class App extends Component {
     return (
       <Router>
         <div>
+          {/*Make a fixed sidebar*/}
           <div className="sidebar">
             <Link to="/">Go Home Richard!! </Link>
             <Link to="/search">Search For Gifs </Link>
           </div>
+        {/*make a section for your page views*/}
           <section className="App">
             <Route exact path="/" component={Home} />
             <Route  path="/search" component={Search} />
